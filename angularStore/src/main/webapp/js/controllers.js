@@ -34,7 +34,9 @@ angular.module('gemStore.controllers', [])
 .controller('StoreController', [ '$http', function($http) {
 	var store = this;
 	store.products = [];
+	console.log('llamando ando');
 	$http.get('http://localhost:8080/angularstore.restservice/resttest').success(function(data) {
+		console.log(data);
 		store.products = data;
 	});
 } ]);

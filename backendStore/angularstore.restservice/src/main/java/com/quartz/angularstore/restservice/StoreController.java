@@ -21,17 +21,17 @@ public class StoreController {
 	    	imagenes.add("images/gem-02.gif");
 	    	imagenes.add("images/gem-05.gif");
 	    	imagenes.add("images/gem-09.gif");
-	    	products.add(new Product("Azurite","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
+	    	products.add(new Product("Azurite1","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
 	    	imagenes=new ArrayList<String>();
 	    	imagenes.add("images/gem-02.gif");
 	    	imagenes.add("images/gem-05.gif");
 	    	imagenes.add("images/gem-09.gif");
-	    	products.add(new Product("Azurite","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
+	    	products.add(new Product("Azurite2","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
 	    	imagenes=new ArrayList<String>();
 	    	imagenes.add("images/gem-02.gif");
 	    	imagenes.add("images/gem-05.gif");
 	    	imagenes.add("images/gem-09.gif");
-	    	products.add(new Product("Azurite","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
+	    	products.add(new Product("Azurite3","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
 	        return products;
 	    }
 }
