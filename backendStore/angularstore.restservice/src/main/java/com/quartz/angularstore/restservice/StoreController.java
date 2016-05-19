@@ -1,5 +1,7 @@
 package com.quartz.angularstore.restservice;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +15,23 @@ public class StoreController {
 	    private final AtomicLong counter = new AtomicLong();
 
 	    @RequestMapping("/resttest")
-	    public Product greeting(@RequestParam(value="name", defaultValue="World") String name) {
-	        return new Product(counter.incrementAndGet(),
-	                            String.format(template, name));
+	    public List<Product> greeting(@RequestParam(value="name", defaultValue="World") String name) {
+	    	List<Product> products=new ArrayList<Product>();
+	    	List<String> imagenes=new ArrayList<String>();
+	    	imagenes.add("images/gem-02.gif");
+	    	imagenes.add("images/gem-05.gif");
+	    	imagenes.add("images/gem-09.gif");
+	    	products.add(new Product("Azurite","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
+	    	imagenes=new ArrayList<String>();
+	    	imagenes.add("images/gem-02.gif");
+	    	imagenes.add("images/gem-05.gif");
+	    	imagenes.add("images/gem-09.gif");
+	    	products.add(new Product("Azurite","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
+	    	imagenes=new ArrayList<String>();
+	    	imagenes.add("images/gem-02.gif");
+	    	imagenes.add("images/gem-05.gif");
+	    	imagenes.add("images/gem-09.gif");
+	    	products.add(new Product("Azurite","Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",8,110.50,7,"#CCC",14,imagenes,new ArrayList<String>()));
+	        return products;
 	    }
 }
