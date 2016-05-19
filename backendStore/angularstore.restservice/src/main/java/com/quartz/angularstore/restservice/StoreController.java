@@ -12,7 +12,7 @@ public class StoreController {
 	 private static final String template = "Hello, %s!";
 	    private final AtomicLong counter = new AtomicLong();
 
-	    @RequestMapping("/greeting")
+	    @RequestMapping("/resttest")
 	    public Product greeting(@RequestParam(value="name", defaultValue="World") String name) {
 	        return new Product(counter.incrementAndGet(),
 	                            String.format(template, name));
